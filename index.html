@@ -6,8 +6,27 @@
 </head>
 
   <body>
-    <h1>Mire se vini</h1>
-    <p>Kjo esht faqja ime e pare ne GitHub Pages.</p>
+    <label>Numri pare</label>
+   <input type="number" id="nr1">
+  <br>
+    <label>Numri dyte</label>
+   <input type="number" id="nr2">
+    <br>
+    <button type="submit" onclick="sum()">+</button>
+    <p id="result"></p>
+
+    <script>
+    function sum() 
+    {
+    var a=Number(document.getElementById('nr1').value);
+    var b=Number(document.getElementById('nr2').value);
+    var c = a + b;
+    document.getElementById('result').innerHTML =c;
+      
+    }
+      
+    </script>
+    
   </body>
   
 </html>
