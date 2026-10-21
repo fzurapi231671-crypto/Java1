@@ -22,8 +22,36 @@
 
      <button type="submit" onclick="pqestimi()">/</button>
     <p id="result3"></p>
+
+    <br>
+    <hr>
+    <h1>Ritje/Zbritje te numrit</h1>
+    <p id="numri">0</p>
+    <button type="submit" onclick='increase()'>Ritje +</button>
+    <button type="submit" onclick='decrease()'>Zbritje -</button>
+    
     
     <script>
+      var n = 0;
+      function increase() {
+
+        n=n+1;
+        
+        document.getElementById('numri').innerHTML =n;
+      }
+
+      function decrease() {
+
+        n=n-1;
+        
+        document.getElementById('numri').innerHTML =n;
+        
+        
+      }
+
+
+
+      
     function sum() 
     {
     var a=Number(document.getElementById('nr1').value);
