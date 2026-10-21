@@ -19,6 +19,9 @@
 
     <button type="submit" onclick="times()">*</button>
     <p id="result2"></p>
+
+     <button type="submit" onclick="pqestimi()">/</button>
+    <p id="result3"></p>
     
     <script>
     function sum() 
@@ -41,6 +44,13 @@
     var b=Number(document.getElementById('nr2').value);
     var c = a * b;
     document.getElementById('result2').innerHTML =c;
+    }
+      function pqestimi() 
+    {
+    var a=Number(document.getElementById('nr1').value);
+    var b=Number(document.getElementById('nr2').value);
+    var c = a / b;
+    document.getElementById('result3').innerHTML =c;
     }
       
     </script>
